@@ -1,0 +1,5 @@
+{
+  "name": "Aether3D - AI Generative Space",
+  "description": "A high-end 3D experience combining React Three Fiber with Gemini AI to explore and generate mathematical aesthetic structures in real-time.",
+  "requestFramePermissions": []
+}
