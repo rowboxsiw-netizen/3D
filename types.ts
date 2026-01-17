@@ -3,7 +3,8 @@ export enum ShapeType {
   BOX = 'BOX',
   SPHERE = 'SPHERE',
   TORUS_KNOT = 'TORUS_KNOT',
-  ICOSAHEDRON = 'ICOSAHEDRON'
+  ICOSAHEDRON = 'ICOSAHEDRON',
+  OCTAHEDRON = 'OCTAHEDRON'
 }
 
 export interface ShapeConfig {
@@ -13,11 +14,16 @@ export interface ShapeConfig {
   roughness: number;
   metalness: number;
   rotationSpeed: number;
+  distortion: number;
+  wobble: number;
 }
 
-export interface AIAnalysis {
-  title: string;
-  description: string;
-  mathematicalSignificance: string;
-  creativeInsight: string;
+export interface AIResponse {
+  config?: Partial<ShapeConfig>;
+  analysis?: {
+    title: string;
+    description: string;
+    mathematicalSignificance: string;
+    creativeInsight: string;
+  };
 }
